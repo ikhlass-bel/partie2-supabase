@@ -1,0 +1,268 @@
+{
+  "info": {
+    "_postman_id": "e21f309a-3210-498a-985e-c3e8a2acfba8",
+    "name": "DigitalBank",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "35791403"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhvdmN2ZHJpdWJ4a25reHVuanltIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwMDkzNzEsImV4cCI6MjA4NDU4NTM3MX0.lWhy5xZamArj1PBzJKLnyYtcSROwgQwr2hjtY_n76Ic",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"cs@test.com\",\r\n  \"password\": \"000000\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://xovcvdriubxknkxunjym.supabase.co/auth/v1/token?grant_type=password",
+          "protocol": "https",
+          "host": [
+            "xovcvdriubxknkxunjym",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "auth",
+            "v1",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get customer",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get customer",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhvdmN2ZHJpdWJ4a25reHVuanltIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwMDkzNzEsImV4cCI6MjA4NDU4NTM3MX0.lWhy5xZamArj1PBzJKLnyYtcSROwgQwr2hjtY_n76Ic",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImJiMzY0Njc0LTk3OTYtNDA1Yi1hZGJjLTk4MzdkMjIyMDViMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3hvdmN2ZHJpdWJ4a25reHVuanltLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkMzQzNzRlNi1kOGVjLTQyODgtODRiNi1iOGViNmQ1NmI4NGMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MTE1MzI1LCJpYXQiOjE3NjkxMTE3MjUsImVtYWlsIjoiY3NAdGVzdC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2OTExMTcyNX1dLCJzZXNzaW9uX2lkIjoiNzNlYWY3ZGMtZjM2Ny00Y2NjLTkyM2YtYTc1OTViMjMwMjE2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.CYShXRqVSaVxd682CmI2Y83h9Dfl5tEMF5R2jMCKJkcOwUeXn95T04eiE5rd51JRMi4mWnu-xn--vkJodomquw",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://xovcvdriubxknkxunjym.supabase.co/rest/v1/customers",
+          "protocol": "https",
+          "host": [
+            "xovcvdriubxknkxunjym",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "customers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Test sans authentification",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhvdmN2ZHJpdWJ4a25reHVuanltIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwMDkzNzEsImV4cCI6MjA4NDU4NTM3MX0.lWhy5xZamArj1PBzJKLnyYtcSROwgQwr2hjtY_n76Ic",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://xovcvdriubxknkxunjym.supabase.co/rest/v1/customers",
+          "protocol": "https",
+          "host": [
+            "xovcvdriubxknkxunjym",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "customers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Injection SQL",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhvdmN2ZHJpdWJ4a25reHVuanltIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwMDkzNzEsImV4cCI6MjA4NDU4NTM3MX0.lWhy5xZamArj1PBzJKLnyYtcSROwgQwr2hjtY_n76Ic",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImJiMzY0Njc0LTk3OTYtNDA1Yi1hZGJjLTk4MzdkMjIyMDViMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3hvdmN2ZHJpdWJ4a25reHVuanltLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkMzQzNzRlNi1kOGVjLTQyODgtODRiNi1iOGViNmQ1NmI4NGMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MTE1MzI1LCJpYXQiOjE3NjkxMTE3MjUsImVtYWlsIjoiY3NAdGVzdC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2OTExMTcyNX1dLCJzZXNzaW9uX2lkIjoiNzNlYWY3ZGMtZjM2Ny00Y2NjLTkyM2YtYTc1OTViMjMwMjE2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.CYShXRqVSaVxd682CmI2Y83h9Dfl5tEMF5R2jMCKJkcOwUeXn95T04eiE5rd51JRMi4mWnu-xn--vkJodomquw",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"cs@test.com\",\r\n  \"password\": \"000000\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://xovcvdriubxnkkxunjym.supabase.co/auth/v1/token?grant_type=password",
+          "protocol": "https",
+          "host": [
+            "xovcvdriubxnkkxunjym",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "auth",
+            "v1",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TEST 3 — Bypass RBAC",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhvdmN2ZHJpdWJ4a25reHVuanltIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwMDkzNzEsImV4cCI6MjA4NDU4NTM3MX0.lWhy5xZamArj1PBzJKLnyYtcSROwgQwr2hjtY_n76Ic",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImJiMzY0Njc0LTk3OTYtNDA1Yi1hZGJjLTk4MzdkMjIyMDViMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3hvdmN2ZHJpdWJ4a25reHVuanltLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkMzQzNzRlNi1kOGVjLTQyODgtODRiNi1iOGViNmQ1NmI4NGMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MTE1MzI1LCJpYXQiOjE3NjkxMTE3MjUsImVtYWlsIjoiY3NAdGVzdC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2OTExMTcyNX1dLCJzZXNzaW9uX2lkIjoiNzNlYWY3ZGMtZjM2Ny00Y2NjLTkyM2YtYTc1OTViMjMwMjE2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.CYShXRqVSaVxd682CmI2Y83h9Dfl5tEMF5R2jMCKJkcOwUeXn95T04eiE5rd51JRMi4mWnu-xn--vkJodomquw",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"cs@test.com\",\r\n  \"password\": \"000000\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://xovcvdriubxnkkxunjym.supabase.co/rest/v1/customers",
+          "protocol": "https",
+          "host": [
+            "xovcvdriubxnkkxunjym",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "customers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TEST 4 — Brute force login",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhvdmN2ZHJpdWJ4a25reHVuanltIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwMDkzNzEsImV4cCI6MjA4NDU4NTM3MX0.lWhy5xZamArj1PBzJKLnyYtcSROwgQwr2hjtY_n76Ic",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImJiMzY0Njc0LTk3OTYtNDA1Yi1hZGJjLTk4MzdkMjIyMDViMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3hvdmN2ZHJpdWJ4a25reHVuanltLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkMzQzNzRlNi1kOGVjLTQyODgtODRiNi1iOGViNmQ1NmI4NGMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY5MTE1MzI1LCJpYXQiOjE3NjkxMTE3MjUsImVtYWlsIjoiY3NAdGVzdC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2OTExMTcyNX1dLCJzZXNzaW9uX2lkIjoiNzNlYWY3ZGMtZjM2Ny00Y2NjLTkyM2YtYTc1OTViMjMwMjE2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.CYShXRqVSaVxd682CmI2Y83h9Dfl5tEMF5R2jMCKJkcOwUeXn95T04eiE5rd51JRMi4mWnu-xn--vkJodomquw",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"cs@test.com\",\r\n  \"password\": \"000000\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://xovcvdriubxnkkxunjym.supabase.co/rest/v1/customers",
+          "protocol": "https",
+          "host": [
+            "xovcvdriubxnkkxunjym",
+            "supabase",
+            "co"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "customers"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
